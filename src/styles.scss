@@ -1,0 +1,92 @@
+$gray-color: #ccc;
+$light-gray: #eee;
+$dark-gray: #999;
+$white-color: #fff;
+$slight-red: #ff726f;
+
+.main{    
+    width: 100%;
+    margin: 10% 20%;
+
+    .normal{
+      border: 1px solid $light-gray;
+    }
+    .focused{
+      border: 1px solid $slight-red;
+    }
+
+    .content{
+      border-radius: 2px;    
+      display: flex;
+      flex-direction: row;
+      max-width: 350px;
+
+      .icon{
+        padding: 10px;
+        cursor: pointer;
+      }
+      .options{
+        background-color: $light-gray;
+      }
+      div.options:hover {
+        background-color: $gray-color;
+      }
+      .options-select{
+        background-color: $dark-gray;
+      }
+      .nav-same-tab{
+        background-color: $light-gray;
+      }
+      div.nav-same-tab:hover {
+        background-color: $gray-color;
+      }
+      .nav-new-tab{
+        background-color: $dark-gray;
+      }
+      .input-area{
+        flex: 1;
+
+        .inputbox {
+          padding: 10px;
+          border: none;
+          width: 80%;
+        }
+        input:focus{
+            outline: none;
+        } 
+      }   
+      .save-data{
+        background-color: $slight-red;
+      }
+
+    }
+
+    .actions-div{
+      border: 1px solid $light-gray;
+      position: absolute;
+      width: 150px;
+      text-align: left;
+      z-index: 1;
+      max-height: 300px;
+      line-height: 0;
+      border-radius: 5px;
+      background-color: $white-color;
+      box-shadow: 1px 1px $light-gray;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      left: calc(20% - 150px);
+
+      .sub-actions{
+        display: block;
+        line-height: 1.5;
+        padding: 8px;
+        cursor: pointer;
+      }
+    }
+
+    span.sub-actions:hover {
+      background-color: $light-gray;
+    }
+
+}
+  
